@@ -11,5 +11,4 @@ def number_max():
     # Возвращение переменной results в тело программы.
     return results
 
-maximum = number_max ()
-print("Максимальный элемент списка: ",maximum)
+print("Максимальный элемент списка:", number_max ())

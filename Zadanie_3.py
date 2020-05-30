@@ -7,12 +7,8 @@ def massive_one():
        # Запись эллементов в список.
         numb = int(input("Введите эллемент: "))
         numbers.append(numb)
-    # Нахождение мин. и макс. значений и их сложение.
-    numb_max = (max(numbers))
-    numb_min = (min(numbers))
-    result_one = numb_min + numb_max
     # Возвращение переменной result_one в тело программы.
-    return result_one
+    return numbers
 
 def massive_two():
     # Массив для записи всех чисел.
@@ -23,24 +19,28 @@ def massive_two():
        # Запись эллементов в список.
         numb = int(input("Введите эллемент: "))
         numbers.append(numb)
-    # Нахождение мин. и макс. значений и их сложение.
-    numb_max = (max(numbers))
-    numb_min = (min(numbers))
-    result_two = numb_min + numb_max
     # Возвращение переменной result_one в тело программы.
-    return result_two
+    return numbers
+
 
 def comparison():
+    # Нахождение мин. и макс. значений у первого списка и их сложение.
+    numb_max = (max(res_one))
+    numb_min = (min(res_one))
+    result_one = numb_min + numb_max
+    # Нахождение мин. и макс. значений у второго списка и их сложение.
+    numb_max = (max(res_two))
+    numb_min = (min(res_two))
+    result_two = numb_min + numb_max
     # Сравнение суммы элементов списка
-    if res_one > res_two:
-        total = print("Сумма элементов первого списка больше")
-    elif res_one == res_two:
+    if result_one > result_two:
+        total = print("Сумма элементов первого списка больше", res_one)
+    elif result_one == result_two:
         total = print("Сумма элементов обоих списков равна")
     else:
-        total = print("Сумма элементов второго списка больше")
+        total = print("Сумма элементов второго списка больше", res_two)
     return total
 
 res_one = massive_one()
 res_two = massive_two()
-result = comparison()
-
+comparison()
