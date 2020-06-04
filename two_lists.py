@@ -35,8 +35,9 @@ def comparison():
     result_two = numb_min + numb_max
     # Сравнение суммы элементов списка
     if result_one > result_two:
-        print("Сумма элементов первого списка больше", res_one)
+        finish = res_one
     elif result_one == result_two:
-        print("Сумма элементов обоих списков равна")
+        finish = res_two
     else:
-        print("Сумма элементов второго списка больше", res_two)
+        finish = res_two
+    return finish
