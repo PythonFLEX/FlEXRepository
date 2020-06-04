@@ -12,7 +12,7 @@ while choose != 5:
     print("5. Выход")
     choose = int(input("Выберите действие: "))
     if choose == 1:
-        print("Максимальный элемент:", max_elem.number_max())
+        print("Максимальный элемент:", max_element.number_max())
     elif choose == 2:
         print("Отсортированный список:", sort_list.number_sort_odd())
     elif choose == 3:
